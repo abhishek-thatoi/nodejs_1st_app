@@ -1,0 +1,39 @@
+<div class="parent flex  justify-center items-center
+                min-h-screen  
+                bg-yellow-400
+                ">
+        <div class="child flex justify-center items-center
+                    h-[450px] w-[325px]  my-20
+                    drop-shadow-md rounded-md bg-white">
+            <div class="entry_box flex-col justify-center items-center
+                        h-4/6">
+                        <p class="contact_now text-center
+                                    mb-10 mt-5
+                                    font-sans font-bold text-3xl">
+                            <u>Contact Now</u>
+                            <br class="">
+                        </p>
+                        
+                        <div class="inp flex-col justify-center items-center 
+                                    mx-[20px]">
+                    <!-- !here as the items inside are html tags and not div justify-center and item-center dont work on-->
+                    <!-- todo here: so if nothing works we go for the jod <center tag> -->
+                            <form action="">
+                                <input type="text" id="name" placeholder="Name"
+                                class="input mb-2 mx-10 py-2 pl-4 pr-12 
+                                border-gray-300 border-2 rounded-md placeholder-gray-300">
+                                <input type="email" id="email" placeholder="Email address"
+                                class="input mb-2 mx-10 py-2 pl-4 pr-12
+                                border-gray-300 border-2 rounded-lg placeholder-gray-300">
+                                <br><center><button class="btn  py-1 px-5  mt-8 
+                                drop-shadow-xl
+                                bg-violet-700 rounded-md text-white text-base
+                                hover:bg-pink-600">
+                            Send Message
+                                </button></center>
+                            </form>
+                        </div>
+            </div>
+            
+        </div>
+    </div>

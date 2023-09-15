@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <title>login</title>
+</head>
+<body class="bg-red-200"> 
+    <!-- <h4>workin</h4> -->
+    
+
+
+    <!-- 
+        !later to use
+        bg-[#101010] -->
+        
+    <div class="parent flex  justify-center items-center
+                min-h-screen  
+                bg-yellow-400
+                ">
+        <div class="child flex justify-center items-center
+                    h-[450px] w-[325px]  my-20
+                    drop-shadow-md rounded-md bg-white">
+            <div class="entry_box flex-col justify-center items-center
+                        h-4/6">
+                        <p class="contact_now text-center
+                                    mb-10 mt-5
+                                    font-sans font-bold text-3xl">
+                            <u>Register Now</u>
+                            <br class="">
+                        </p>
+                        
+                        <div class="inp flex-col justify-center items-center 
+                                    mx-[20px]">
+                    <!-- !here as the items inside are html tags and not div justify-center and item-center dont work on-->
+                    <!-- todo here: so if nothing works we go for the jod <center tag> -->
+                            <form method="post" >
+
+                                <!--the *****id***** attribute acts as a "key:value" while data being posted on form -->
+
+                                <input type="text" id="name" name="name" placeholder="Name"
+                                    class="input mb-2 mx-10 py-2 pl-4 pr-12 
+                                    border-gray-300 border-2 rounded-md placeholder-gray-300">
+
+                                <!--the id=" " is exactly what  is displayed in req.body and schema of database-->
+                                <input type="email" id="email" name="email" placeholder="Email address"
+                                    class="input mb-2 mx-10 py-2 pl-4 pr-12
+                                    border-gray-300 border-2 rounded-lg placeholder-gray-300">
+
+                                <input type="password" id="password" name="password" placeholder="password"
+                                    class="input mb-2 mx-10 py-2 pl-4 pr-12
+                                    border-gray-300 border-2 rounded-lg placeholder-gray-300">
+                                    
+                                <br><center><button class="btn  py-1 px-5  mt-8 
+                                    drop-shadow-xl
+                                    bg-violet-700 rounded-md text-white text-base
+                                    hover:bg-pink-600">
+                                    Register now
+                                </button></center>
+                            </form>
+                    </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
